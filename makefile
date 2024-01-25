@@ -1,8 +1,11 @@
 install_folder = platform
 full_platform_path = $(shell pwd)/platform
 
+down:
+	docker-compose down
+
 in:
-	docker exec -it laraveldockertemplate-php-fpm-1 /bin/bash
+	docker exec -it laravel11-php-fpm-1 /bin/bash
 
 build:
 	docker-compose up -d

@@ -38,6 +38,20 @@ services:
     networks:
       - app-network
 
+  mysql-testing:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: database_name_testing
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306"
+    volumes:
+      - database-testing:/var/lib/mysql
+    networks:
+      - app-network
+
   mailpit:
     image: axllent/mailpit
     restart: always
@@ -60,3 +74,4 @@ networks:
 
 volumes:
   database:
+  database-testing:
