@@ -1,5 +1,5 @@
 # start with the official Composer image and name it
-FROM composer:2.6.5 AS composer
+FROM composer:2.7.6 AS composer
 
 # Use the official PHP 8.2 image as the base image
 FROM php:8.2-fpm
