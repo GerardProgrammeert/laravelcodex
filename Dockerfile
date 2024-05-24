@@ -2,7 +2,7 @@
 FROM composer:2.6.5 AS composer
 
 # Use the official PHP 8.2 image as the base image
-FROM php:8.2-fpm
+FROM php:8.3-fpm
 
 # copy the Composer PHAR from the Composer image into the PHP image
 COPY --from=composer /usr/bin/composer /usr/bin/composer
