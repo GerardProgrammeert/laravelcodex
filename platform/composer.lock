@@ -5069,20 +5069,21 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v7.0.6",
+            "version": "v7.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "dbdc0c04c28ac53de1fa35f92fca26e9b1345d98"
+                "reference": "74817ee48e37cce1a1b33c66ffdb750e7e048c3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/dbdc0c04c28ac53de1fa35f92fca26e9b1345d98",
-                "reference": "dbdc0c04c28ac53de1fa35f92fca26e9b1345d98",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/74817ee48e37cce1a1b33c66ffdb750e7e048c3c",
+                "reference": "74817ee48e37cce1a1b33c66ffdb750e7e048c3c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
@@ -5112,6 +5113,7 @@
                 "symfony/property-access": "^6.4|^7.0",
                 "symfony/property-info": "^6.4|^7.0",
                 "symfony/translation-contracts": "^2.5|^3",
+                "symfony/type-info": "^7.1",
                 "symfony/uid": "^6.4|^7.0",
                 "symfony/validator": "^6.4|^7.0",
                 "symfony/var-dumper": "^6.4|^7.0",
@@ -5144,7 +5146,7 @@
             "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/serializer/tree/v7.0.6"
+                "source": "https://github.com/symfony/serializer/tree/v7.1.1"
             },
             "funding": [
                 {
@@ -5160,7 +5162,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-28T09:20:36+00:00"
+            "time": "2024-05-31T14:57:53+00:00"
         },
         {
             "name": "symfony/service-contracts",
